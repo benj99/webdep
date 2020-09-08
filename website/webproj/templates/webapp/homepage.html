@@ -1,0 +1,61 @@
+
+{% extends 'webapp/base.html' %}
+{% block body_block %}
+{%load static%}
+
+
+
+
+<div class="jumbotron">
+<h1 class="text-center">Benji's Homepage</h1>
+</div>
+
+<div class="row card-deck">
+
+
+<div class="card text-white bg-primary mb-3" style="width: 18rem;">
+  <img src="static/images/mimi.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Mimi :)</h5>
+    <p class="card-text">Here is a picture of Mimi</p>
+    <a href="{% url 'webapp:pic1' %}" class="btn btn-warning">Pic1</a>
+  </div>
+</div>
+
+<div class="card text-white bg-warning mb-3" style="width: 18rem;">
+  <img src="static/images/mimi2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Mimi ;)</h5>
+    <p class="card-text">Here is another one</p>
+    <a href="{% url 'webapp:pic2' %}" class="btn btn-danger">Pic2</a>
+  </div>
+</div>
+
+<div class="card text-white bg-success mb-3" style="width: 18rem;">
+  <img src="static/images/mimi3.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Mimi c:</h5>
+    <p class="card-text">One more for goood measure</p>
+    <a href="{% url 'webapp:pic3' %}" class="btn btn-primary">Pic3</a>
+  </div>
+</div>
+
+</div>
+
+
+
+<div class="card">
+  <div class="card-header">
+    Quote
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p>One man's trash is another man's Christmans gift for Dad!</p>
+      <footer class="blockquote-footer">Gene Belcher <cite title="Source Title">Bob's Burgers, Season 5:Father of the Bob</cite></footer>
+    </blockquote>
+  </div>
+</div>
+
+
+
+{% endblock %}
